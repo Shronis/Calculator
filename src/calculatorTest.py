@@ -3,23 +3,22 @@ from calculator import Calculator
 
 class MyTestCase(unittest.TestCase):
 
+    def setUp(self) -> None:
+        self.calculator = Calculator()
+
     def test_instantiate_Calculator(self):
-        calculator = Calculator()
-        self.assertIsInstance(calculator, Calculator)
+        self.assertIsInstance(self.calculator, Calculator)
 
     def test_results_property_Calculator(self):
-        calculator = Calculator()
-        self.assertEqual(calculator.result, 4)
+        self.assertEqual(self.calculator.result, 4)
 
     def test_add_method_Calculator(self):
-        calculator = Calculator()
-        self.assertEqual(calculator.add(2,2), 4)
-        self.assertEqual(calculator.result, 4)
+        self.assertEqual(self.calculator.add(2,2), 4)
+        self.assertEqual(self.calculator.result, 4)
 
     def test_subtract_method_Calculator(self):
-        calculator = Calculator()
-        self.assertEqual(calculator.sub(2,2), 0)
-        self.assertEqual(calculator.result, 0)
+        self.assertEqual(self.calculator.sub(2,2), 0)
+        self.assertEqual(self.calculator.result, 0)
 
 if __name__ == '__main__':
     unittest.main()
