@@ -11,5 +11,6 @@ class MyTestCase(unittest.TestCase):
         calculator = Calculator()
         self.assertEqual(calculator.result, 4)
 
+
 if __name__ == '__main__':
     unittest.main()
