@@ -7,18 +7,30 @@ def addition(a,b):
     return c
 
 def subtraction(a,b):
-    return a-b
+    a = int(a)
+    b = int(b)
+    c = b - a
+    return c
+
 
 def multiplication(a,b):
-    return a*b
+    a = int(a)
+    b = int(b)
+    c = a * b
+    return c
 
 def division(a,b):
-    return a/b
+    a = int(a)
+    b = int(b)
+    c = b/a
+    return c
 
 def square(a):
+    a = int(a)
     return a*a
 
 def squareroot(a):
+    a = int(a)
     return a ** .5
 
 def mean(data):
