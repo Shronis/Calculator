@@ -21,6 +21,10 @@ def square(a):
 def squareroot(a):
     return a ** .5
 
+def mean(data):
+    mean = data
+    return mean
+
 class Calculator:
     result = 0
 
@@ -52,3 +56,13 @@ class Calculator:
     def sqrt(self,a):
         self.result = squareroot(a)
         return self.result
+
+class CsvStats(Calculator):
+    data = []
+
+    def __init__(self, data_file):
+        self.data = CsvReader(data_file)
+        pass
+
+    def mean(self):
+        mean(self.data)
