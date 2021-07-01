@@ -1,4 +1,3 @@
-import math
 
 def addition(a,b):
     return a+b
@@ -16,7 +15,7 @@ def square(a):
     return a*a
 
 def squareroot(a):
-    return math.sqrt(a)
+    return a ** .5
 
 class Calculator:
     result = 0
