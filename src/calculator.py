@@ -12,7 +12,6 @@ def subtraction(a,b):
     c = b - a
     return c
 
-
 def multiplication(a,b):
     a = int(a)
     b = int(b)
@@ -22,7 +21,7 @@ def multiplication(a,b):
 def division(a,b):
     a = int(a)
     b = int(b)
-    c = b/a
+    c = a/b
     return c
 
 def square(a):
@@ -71,6 +70,7 @@ class Calculator:
 
 class CsvStats(Calculator):
     data = []
+    data.clear()
 
     def __init__(self, data_file):
         self.data = CsvReader(data_file)
