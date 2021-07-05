@@ -2,4 +2,4 @@ This is the calcualtor, the master branch is the last version of the program tha
 The CVS branch has the CVS reader for all the tests but it does not work. When it reads the files it keeps the information from one test
 when performing another, as a result this causes the other tests to fail, I tried many different ways for the information to be deleted
 after performing a test but it never worked and as a result I was unable to get it to work.
-The file named "test" is a screenshot of the last time the program worked
+The file named "working" is a screenshot of the last time the program worked
