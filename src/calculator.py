@@ -70,7 +70,6 @@ class Calculator:
 
 class CsvStats(Calculator):
     data = []
-    data.clear()
 
     def __init__(self, data_file):
         self.data = CsvReader(data_file)
