@@ -4,6 +4,10 @@ from StatCalc.Median import median
 from StatCalc.Mode import mode
 from StatCalc.Variance import variance
 from StatCalc.StdDev import stddev
+from StatCalc.RandomSeed import random_seed
+from StatCalc.Random_Num import random_num
+from StatCalc.Random_Number_List import random_num_list
+
 
 class Statistics(Calculator):
     data = []
@@ -29,4 +33,16 @@ class Statistics(Calculator):
 
     def stddev(self, data):
         self.result = stddev(data)
+        return self.result
+
+    def random_seed(self, x,y):
+        self.result = random_seed(x,y)
+        return self.result
+
+    def random_seed(self):
+        self.result = random_num()
+        return self.result
+
+    def random_seed(self, x,y,n):
+        self.result = random_num_list(x,y,n)
         return self.result
