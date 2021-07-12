@@ -15,7 +15,7 @@ class Statistics(Calculator):
     def __init__(self):
         super().__init__()
 
-    def population_mean(self, data):
+    def mean(self, data):
         self.result = mean(data)
         return self.result
 
