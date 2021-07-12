@@ -1,6 +1,3 @@
-This is the calcualtor, the master branch is the last version of the program that worked, it has the CVS reader for only the add test. 
-The CVS branch has the CVS reader for all the tests but it does not work. When it reads the files it keeps the information from one test
-when performing another, as a result this causes the other tests to fail, I tried many different ways for the information to be deleted
-after performing a test but it never worked and as a result I was unable to get it to work.
-The file named "working" is a screenshot of the last time the program worked. The program has the functions for 
-addition,subtraction,multiplication,division,Square and square root
+This is the calcualtor, the master branch is the last version of the program that worked, it has the CVS reader for all the test functions of the 
+calculator which are addition, subtraction, multiplication, division, square, and square root. The CVS reader branch was just for getting the CVS reader
+to work it is now the same as the master. The file nmaed "working" show a screenshot of the program working with all the CVS Readers
