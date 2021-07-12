@@ -15,6 +15,6 @@ def median(x):
             result = num_list[int(division(num_values, 2))]
         return result
     except ZeroDivisionError:
-        print("Error: Can't Divide by 0")
+        print("Can't Divide by 0")
     except ValueError:
-        print("Error: Check your data inputs")
+        print("Invalid Data")
