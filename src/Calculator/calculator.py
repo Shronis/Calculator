@@ -38,11 +38,7 @@ class Calculator:
         self.result = squareroot(a)
         return self.result
 
-class StatCalc(Calculator):
-    def __init__(self):
-        super().__init__()
 
-    pass
 
 
 
