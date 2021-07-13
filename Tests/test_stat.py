@@ -9,7 +9,7 @@ class MyTestCase(unittest.TestCase):
 
     test_data = CsvReader('Tests/Data/Test_Data.csv').data
     answer = CsvReader('Tests/Data/Stat_Answers.csv').data
-    column1 = [int(row['value1']) for row in test_data]
+    column1 = [int(row['Value 1']) for row in test_data]
 
     def setUp(self) -> None:
         self.statistics = Statistics()
