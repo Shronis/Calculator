@@ -15,5 +15,4 @@ def variance(x):
     except ZeroDivisionError:
         print("Can't Divide by 0")
     except ValueError:
->>>>>>> origin/master
         print("Invalid Data")
