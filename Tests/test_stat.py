@@ -8,7 +8,7 @@ from pprint import pprint
 class MyTestCase(unittest.TestCase):
 
     test_data = CsvReader('Tests/Data/Test_Data.csv').data
-    
+    answer = CsvReader('Tests/Data/Stat_Answers.csv').data
     column1 = [int(row['Value 1']) for row in test_data]
 
     def setUp(self) -> None:
@@ -18,31 +18,26 @@ class MyTestCase(unittest.TestCase):
         self.assertIsInstance(self.statistics, Statistics)
 
     def test_mean(self):
-        answer = CsvReader('Tests/Data/Stat_Answers.csv').data
         for row in self.answer:
             self.assertEqual(self.statistics.mean(self.column1), float(row['mean']))
             self.assertEqual(self.statistics.result, float(row['mean']))
 
     def test_median_statistics(self):
-        answer = CsvReader('Tests/Data/Stat_Answers.csv').data
         for row in self.answer:
             self.assertEqual(self.statistics.median(self.column1), float(row['median']))
             self.assertEqual(self.statistics.result, float(row['median']))
 
     def test_mode_statistics(self):
-        answer = CsvReader('Tests/Data/Stat_Answers.csv').data
         for row in self.answer:
             self.assertEqual(self.statistics.mode(self.column1), float(row['mode']))
             self.assertEqual(self.statistics.result, float(row['mode']))
 
     def test_variance_statistics(self):
-        answer = CsvReader('Tests/Data/Stat_Answers.csv').data
         for row in self.answer:
             self.assertEqual(self.statistics.variance(self.column1), float(row['variance']))
             self.assertEqual(self.statistics.result, float(row['variance']))
 
     def test_standard_deviation_statistics(self):
-        answer = CsvReader('Tests/Data/Stat_Answers.csv').data
         for row in self.answer:
             self.assertEqual(self.statistics.stddev(self.column1), float(row['dev']))
             self.assertEqual(self.statistics.result, float(row['stddev']))
