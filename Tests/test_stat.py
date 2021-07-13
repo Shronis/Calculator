@@ -40,7 +40,7 @@ class MyTestCase(unittest.TestCase):
     def test_standard_deviation_statistics(self):
         for row in self.answer:
             self.assertEqual(self.statistics.stddev(self.column1), float(row['dev']))
-            self.assertEqual(self.statistics.result, float(row['stddev']))
+            self.assertEqual(self.statistics.result, float(row['dev']))
 
 if __name__ == '__main__':
     unittest.main()
