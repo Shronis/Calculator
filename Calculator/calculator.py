@@ -1,5 +1,5 @@
 
-from csvReader import CsvReader
+from csvReader.csvReader import CsvReader
 from Calculator.Subtraction import subtraction
 from Calculator.Addition import addition
 from Calculator.Multiplication import multiplication
