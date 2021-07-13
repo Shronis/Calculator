@@ -1,6 +1,6 @@
 
 import unittest
-from csvReader import CsvReader
+from csvReader.csvReader import CsvReader
 from StatCalc.Stat_Calc import Statistics
 
 from pprint import pprint
