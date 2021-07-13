@@ -1,5 +1,5 @@
 #<<<<<<< HEAD
-from Calculator.calculator import Calculator
+from calculator.calculator import Calculator
 from StatCalc.Mean import mean
 from StatCalc.Median import median
 from StatCalc.Mode import mode
