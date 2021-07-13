@@ -1,4 +1,5 @@
 import csv
+from pathlib import path
 
 def classfactory(class_name, dictionary):
     return type(class_name, (object,), dictionary)
