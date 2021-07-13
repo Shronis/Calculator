@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+#<<<<<<< HEAD
 from Calculator.Division import division
 from Calculator.Subtraction import subtraction
 from Calculator.Addition import addition
@@ -18,7 +18,7 @@ def median(x):
     except ZeroDivisionError:
         print("Can't Divide by 0")
     except ValueError:
-=======
+#=======
 from Calculator.Division import division
 from Calculator.Subtraction import subtraction
 from Calculator.Addition import addition
@@ -38,5 +38,5 @@ def median(x):
     except ZeroDivisionError:
         print("Can't Divide by 0")
     except ValueError:
->>>>>>> origin/master
+#>>>>>>> origin/master
         print("Invalid Data")
