@@ -9,4 +9,4 @@ def random_num_list(x,y,n):
         num_list.append(hold)
 
     return num_list
->>>>>>> origin/master
+
