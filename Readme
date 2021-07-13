@@ -1,3 +1,5 @@
-This is the calcualtor, the master branch is the last version of the program that worked, it has the CVS reader for all the test functions of the 
-calculator which are addition, subtraction, multiplication, division, square, and square root. The CVS reader branch was just for getting the CVS reader
-to work it is now the same as the master. The file nmaed "working" show a screenshot of the program working with all the CVS Readers
+This project is a calculator super class and a statistics calculator sub class
+the calculator has the main functions of addition, subtraction, multiplication,divsion, squareing and squarerooting
+the statisics calculator has all the calculator functions plus mode,mean,median,variance,standard deviation as well as random number genrator with or without seed 
+Both the super and sub class have unit test for their function that are tested using csv files which are read using a csv reader
+the project is tested on travis.ci on for such is setup to have run on the website
